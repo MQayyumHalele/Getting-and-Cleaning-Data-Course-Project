@@ -1,0 +1,7 @@
+The variable for the average.txt are as the following
+
+1: activity - Shows the activity in which the subject (participant) were doing during measurement
+2: subject - denodes the unique number given to each subject (participant) to identify their measurement
+3 to 68: The average of recorded mean and standard deviation of measurement taken, which consist of:
+a) Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration 
+b) triaxial Angular velocity from the gyroscope.
