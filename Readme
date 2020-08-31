@@ -1,0 +1,17 @@
+The run_analyst script works by these steps:
+
+1. Loading data.table to enable certain features in dealing with data frame.
+
+2. Downloading zip file from given url and unzipping the file in intended directory.
+
+3. Reading unzipped files separately for their intended purposed. These files were then assigned to their own object. Among them are tabulated data used for ML training and testing. These two tables were combined with their respective participants and activities.
+
+4. The training and testing tables were stack together to formed a single table with dimension of 10299 x 563 (assigned as merged in the script).
+
+5. From the merged table, another table with dimension of 10299 x 68 was formed by extracting the columns of either mean or standard deviation readings (assigned as merged in the extracted).
+
+6. The data in the activity variable are renamed to better represent the data, for example running, standing, and laying.
+
+7. The column named of the extracted table are renamed to better represent the measurement taken.
+
+8. An independent tidy data table with dimension of 180 x 68 (assigned as merged in the average) is created by taking the mean value of each observation.
